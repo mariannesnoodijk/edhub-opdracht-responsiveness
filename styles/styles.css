@@ -1,35 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700&display=swap');
 
-/*////////////////////////////////////////////////////////////////////////
-Table of Contents:
-    1. Global Styles
-    2. Typografie
-    3. Areas
-    4. Media Queries
-////////////////////////////////////////////////////////////////////////*/
+:root {
+    --peach: #F9C48B;
+    --atomic-tangerine: #F69051;
+    --burnt-sienna: #F26D40;
+    --black-bean: #260803;
+    --seashell: #FDEFEC;
+}
 
-/*////////////////////////
-    1. Global Styles
-////////////////////////*/
+html {
+    /*font-size: 12px; !* phone screens - small *!*/
+    background-color: var(--peach);
+}
 
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
 }
 
-/*////////////////////////
-    2. Typography
-////////////////////////*/
+.box-one,
+.box-two {
+    color: var(--black-bean);
+    background-color: var(--seashell);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 12px; /* phone screens - small */
+}
+
+@media screen and (min-width: 768px) { /* tablet screens - medium */
+    html {
+        background-color: var(--atomic-tangerine);
+    }
+    p {
+           font-size: 14px;
+    }
+}
+@media screen and (min-width: 992px) { /* computer screens - large */
+    html {
+        background-color: var(--burnt-sienna);
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+img {
+    width: 100%;
+}
 
 
-
-/*////////////////////////
-    3. Areas
-////////////////////////*/
-
-
-
-
-/*////////////////////////
-    2. Media Queries
-////////////////////////*/
